@@ -1,4 +1,4 @@
-# { dazero } - a initial boilerplate code for reactjs apps
+# Letstalk! - A Reactjs - Redux based application
 
 Includes
 - Redux
@@ -7,5 +7,6 @@ Includes
 - Bootstrap 4
 - SASS
 - frontawesome
+- PubNub API
 
 
