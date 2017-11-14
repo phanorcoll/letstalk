@@ -11,10 +11,6 @@ class RightSide extends Component {
                     <ChatTop channelname='General channel' usersonline={100} />
                     <div className="chat-wrapper">
                         <ChatMessage />
-                        <ChatMessage />
-                        <ChatMessage />
-                        <ChatMessage />
-                        <ChatMessage />
                     </div>
                     <ChatForm />
                 </div>
