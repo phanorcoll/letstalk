@@ -9,13 +9,13 @@ class ChatTop extends Component {
                 <div className="row">
                     <div className="col  d-flex align-items-center">
                         <div className="usersonline justify-content-center align-self-center">
-                            50 users online
+                            {this.props.usersonline} users online
                     </div>
                     </div>
                     <div className="col">
-                        <div className="channeldata text-right">
+                        <div className="channel-data text-right">
                             {this.props.channelname}
-                        <img src={ChannelIcon} />
+                            <img src={ChannelIcon} />
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,8 @@ class ChatTop extends Component {
 }
 
 ChatTop.propTypes = {
-    channelname: PropTypes.string.isRequired
+    channelname: PropTypes.string.isRequired,
+    usersonline: PropTypes.number.isRequired
 }
 
 export default ChatTop

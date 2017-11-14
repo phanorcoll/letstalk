@@ -86,11 +86,34 @@ header {
                 font-size: 14px;
                 color: $secondary-color;
             }
-            .channeldata {
+            .channel-data {
                 img {
                     margin-left: 15px;
                 }
             }
         }
+        .chat-data {
+            margin-top: 25px;
+            .col-lg-1 {
+                flex: 0 0 4.8%!important;
+                padding-right: 0px;
+            }
+            .username{
+                font-size: 17px;
+                font-weight: 700;
+            }
+            .publishdate{
+                color: $secondary-color;
+                font-size: 13px;
+                font-style: italic;
+            }
+            .divider{
+                height: 10px;
+            }
+            .message{
+                font-size: 15px;
+            }
+        }
+        
     }
 }
