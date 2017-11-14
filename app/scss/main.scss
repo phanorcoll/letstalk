@@ -1,6 +1,7 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
 $font-color:#616161;
 $top-bg:#54528C;
 body {
@@ -8,6 +9,7 @@ body {
     color: $font-color;
     font-weight: inherit;
     padding-top: 75px;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -48,6 +50,25 @@ header {
         .group-data {
             font-size: 16px;
             margin-top: 15px;
+        }
+        .users-container {
+            margin-top: 50px;
+            .users-data {
+                font-size: 14px;
+                margin-top: 25px;
+                img {
+                    float: left;
+                }
+                .username {
+                    padding-left: 40px;
+                    top: -5px;
+                    position: relative;
+                }
+                .userstatus {
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
         }
     }
 }
