@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import GroupData from '../components/group_data.jsx'
 import UserData from '../components/user_data.jsx'
 
@@ -14,13 +14,10 @@ export default class LeftBar extends Component {
                         <div className="title">Users</div>
                         <UserData username='phanor coll' userstatus='available' />
                         <UserData username='joseph ruiz' userstatus='away' />
+                        <UserData username='joseph ruiz' userstatus='busy' />
                     </div>
                 </aside>
             </div>
         )
     }
-}
-
-LeftBar.propTypes = {
-
 }

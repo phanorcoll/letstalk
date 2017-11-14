@@ -4,6 +4,12 @@ $fa-font-path: "~font-awesome/fonts";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
 $font-color:#616161;
 $top-bg:#54528C;
+$secondary-color:#9E9E9E;
+html,
+body {
+    height: 100%;
+}
+
 body {
     background: #EFEFF4;
     color: $font-color;
@@ -67,6 +73,22 @@ header {
                 .userstatus {
                     font-size: 12px;
                     font-style: italic;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .chat {
+        .chat-top {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E3E1E1;
+            .usersonline {
+                font-size: 14px;
+                color: $secondary-color;
+            }
+            .channeldata {
+                img {
+                    margin-left: 15px;
                 }
             }
         }

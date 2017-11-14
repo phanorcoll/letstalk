@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import TopBar from '../components/top_bar.jsx';
-import LeftBar from '../components/left_bar.jsx';
+import React, { Component } from 'react'
+import TopBar from '../components/top_bar.jsx'
+import LeftBar from '../components/left_bar.jsx'
+import RightSide from '../components/right_side.jsx'
 
 export default class App extends Component {
     render() {
@@ -10,9 +11,7 @@ export default class App extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <LeftBar />
-                        <div className="col">
-                            chat
-                        </div>
+                        <RightSide />
                     </div>
                 </div>
             </div>
