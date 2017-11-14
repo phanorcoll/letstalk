@@ -21,7 +21,7 @@ class LeftBar extends Component {
 
     renderUserList = () => {
         return _.map(this.props.users, user => {
-            return (<UserData key={user.name} username={user.name} userstatus={user.status} />)
+            return (<UserData key={user.userID} username={user.name} userstatus={user.status} />)
         })
     }
 
