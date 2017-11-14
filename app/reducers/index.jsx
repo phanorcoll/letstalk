@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux';
-import TestReducer from './reducer_test.jsx';
+import { combineReducers } from 'redux'
+import ChannelsReducer from './reducer_channels.jsx'
+import UsersReducer from './reducer_users.jsx'
 
 const rootReducer = combineReducers({
-    test: TestReducer
+    channels: ChannelsReducer,
+    users: UsersReducer
 });
 
 export default rootReducer;
