@@ -14,6 +14,9 @@ export default class App extends Component {
                         <RightSide />
                     </div>
                 </div>
+                {/*  <footer className="text-center">
+                    <a href="http://www.phanorcoll.com">Phanor Coll 2017</a>
+                </footer> */}
             </div>
         );
     }
