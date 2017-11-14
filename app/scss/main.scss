@@ -35,6 +35,8 @@ header {
 
 .container-fluid {
     .data-container {
+        height: 800px;
+        max-height: 800px;
         background: #fff;
         padding: 15px;
         box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
@@ -79,6 +81,7 @@ header {
         }
     }
     .chat {
+        position: relative;
         .chat-top {
             padding-bottom: 10px;
             border-bottom: 1px solid #E3E1E1;
@@ -94,26 +97,62 @@ header {
         }
         .chat-data {
             margin-top: 25px;
+            width: 98%;
             .col-lg-1 {
                 flex: 0 0 4.8%!important;
                 padding-right: 0px;
             }
-            .username{
+            .username {
                 font-size: 17px;
                 font-weight: 700;
             }
-            .publishdate{
+            .publishdate {
                 color: $secondary-color;
                 font-size: 13px;
                 font-style: italic;
             }
-            .divider{
+            .divider {
                 height: 10px;
             }
-            .message{
+            .message {
                 font-size: 15px;
             }
         }
-        
+        .chat-input {
+            margin-top: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 97.5%;
+            margin-bottom: 15px;
+            .form-group {
+                margin-bottom: 0px;
+                input[type=text] {
+                    padding: 20px;
+                    width: 100%;
+                    background: #F2EFEF;
+                    border: 0;
+                    color: #585757;
+                    outline: none;
+                }
+            }
+        }
+        .chat-wrapper {
+            height: 615px;
+            max-height: 615px;
+            overflow: auto;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 53px;
+    background-color: $top-bg;
+    a, a:hover {
+        color: #fffffF;
+        text-decoration: none;
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ChatTop from '../components/chat_top.jsx'
 import ChatMessage from '../components/chat_message.jsx'
+import ChatForm from '../components/chat_form.jsx'
 
 class RightSide extends Component {
     render() {
@@ -8,7 +9,14 @@ class RightSide extends Component {
             <div className="col">
                 <div className="data-container chat">
                     <ChatTop channelname='General channel' usersonline={100} />
-                    <ChatMessage />
+                    <div className="chat-wrapper">
+                        <ChatMessage />
+                        <ChatMessage />
+                        <ChatMessage />
+                        <ChatMessage />
+                        <ChatMessage />
+                    </div>
+                    <ChatForm />
                 </div>
             </div>
         )
