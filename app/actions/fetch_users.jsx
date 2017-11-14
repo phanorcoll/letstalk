@@ -2,9 +2,9 @@ import { FETCH_USERS } from './types.js'
 
 export function FetchUsers() {
     const request = [
-        { name: 'phanorcoll', status:'online' },
-        { name: 'Joseph Ruiz', status:'away' },
-        { name: 'Jesus Araujo', status:'busy' }
+        { userID: Math.round(Math.random() * 1000000).toString(), name: 'phanorcoll', status: 'online' },
+        { userID: Math.round(Math.random() * 1000000).toString(), name: 'Joseph Ruiz', status: 'away' },
+        { userID: Math.round(Math.random() * 1000000).toString(), name: 'Jesus Araujo', status: 'busy' }
     ]
 
     return {
