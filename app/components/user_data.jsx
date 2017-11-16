@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import UserPic from '../images/users-pic.jpeg'
 
 class UserData extends Component {
@@ -14,11 +13,6 @@ class UserData extends Component {
             </div>
         )
     }
-}
-
-UserData.propTypes = {
-    username: PropTypes.string.isRequired,
-    userstatus: PropTypes.string.isRequired
 }
 
 export default UserData

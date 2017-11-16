@@ -1,8 +1,17 @@
 import React, { Component, PropTypes } from 'react'
-import LetstalkLogo from '../images/letstalk_logo.png';
-import NoProfilePic from '../images/no-profile-pic.png';
+import LetstalkLogo from '../images/letstalk_logo.png'
+import NoProfilePic from '../images/no-profile-pic.png'
+import { connect } from 'react-redux'
+import { fetchCurrentUser } from '../actions/current_user_action.jsx'
 
-export default class TopBar extends Component {
+class TopBar extends Component {
+
+
+    componentWillMount() {
+        this.props.fetchCurrentUser()
+    }
+
+
     render() {
         return (
             <header>
@@ -18,7 +27,7 @@ export default class TopBar extends Component {
                         <ul className="navbar-nav">
                             <img src={NoProfilePic} className="d-inline-block align-top" alt="" />
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Phanor Coll</a>
+                                <a className="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{this.props.currentUser.name}</a>
                                 <div className="dropdown-menu" aria-labelledby="dropdown10">
                                     <a className="dropdown-item" href="#">Action</a>
                                     <a className="dropdown-item" href="#">Another action</a>
@@ -33,6 +42,10 @@ export default class TopBar extends Component {
     }
 }
 
-TopBar.propTypes = {
-
+function mapStateToProps(state) {
+    return {
+        currentUser: state.currentUser
+    }
 }
+
+export default connect(mapStateToProps, { fetchCurrentUser })(TopBar);
