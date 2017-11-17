@@ -5,12 +5,12 @@ import { FETCH_USERS } from './types.js'
 export function fetchUsers() {
     const request = [
         {
-            "userId": 's1',
+            "userId": Math.random(),
             "name": "phanoroll",
             "status": 'online'
         },
         {
-            "userId": 's2',
+            "userId": Math.random(),
             "name": "josephruiz",
             "status": 'busy'
         }

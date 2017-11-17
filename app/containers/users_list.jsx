@@ -11,7 +11,7 @@ class UsersList extends Component {
 
     renderUsers = () => {
         return _.map(this.props.users, user => {
-            return <UserData key={user.userId} username={user.name} userstatus={user.status} />
+            return <UserData key={Math.random()} username={user.name} userstatus={user.status} />
         })
     }
 

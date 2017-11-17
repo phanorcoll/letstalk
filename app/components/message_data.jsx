@@ -14,16 +14,16 @@ class ChatMessage extends Component {
             <div className="chat-data">
                 <div className="row">
                     <div className="col col-lg-1 text-right">
-                        <img src={UserPic} />
+                        <img src={this.props.avatar} />
                         <div className="divider"></div>
                         <img src={ChatIcon} />
                     </div>
                     <div className="col">
-                        <div className="username">{this.props.message.Who}</div>
-                        <div className="publishdate">{this.props.message.When}</div>
+                        <div className="username">{this.props.user}</div>
+                        <div className="publishdate">17, November 2017</div>
                         <div className="divider"></div>
                         <div className="message">
-                            {this.props.message.What}
+                            {this.props.msg}
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,10 @@
 import { FETCH_HISTORY } from './types.js'
 
-export function FetchHistory(messageObj) {
-    let request = messageObj
+export function fetchHistory(message) {
     
-    //console.log(request)
+    let request = message
+    
+    //console.log('--received message ',request)
     return {
         type: FETCH_HISTORY,
         payload: request

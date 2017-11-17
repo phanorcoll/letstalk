@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import ChatTop from '../containers/channel_info.jsx'
-import ChatForm from '../components/chat_form.jsx'
-
+import ChatForm from '../containers/chat_form.jsx'
+import History from '../containers/message_list.jsx'
 export default class RightSide extends Component {
     
     render() {
@@ -11,7 +11,7 @@ export default class RightSide extends Component {
                 <div className="data-container chat">
                     <ChatTop />
                     <div className="chat-wrapper">
-                        list of messages
+                        <History />
                     </div>
                     <ChatForm  />
                 </div>
